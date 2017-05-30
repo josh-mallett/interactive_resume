@@ -1,0 +1,157 @@
+@keyframes roll_in {
+  0% {
+    transform: translateX(-300px) rotate(-300deg);
+    opacity: 0; }
+  70% {
+    transform: translateX(15px) rotate(17deg);
+    opacity: 1; }
+  85% {
+    transform: translateX(-10px) rotate(-10deg); }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1; } }
+@keyframes roll_out {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1; }
+  100% {
+    transform: translateX(-300px) rotate(-300deg);
+    opacity: 0; } }
+@keyframes name_roll {
+  0% {
+    transform: rotate(-80deg) translateY(-70px);
+    opacity: 0; }
+  50% {
+    transform: rotate(-80deg) translateY(-70px);
+    opacity: 0; }
+  80% {
+    transform: rotate(6deg) translateY(11px);
+    opacity: 0.7; }
+  90% {
+    transform: rotate(-7deg) translateY(5px); }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1; } }
+@keyframes name_fly_out {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg); }
+  60% {
+    opacity: 1; }
+  100% {
+    transform: translateX(300%) translateY(-200px) rotate(-90deg);
+    opacity: 0; } }
+@keyframes myTitle_fly_in {
+  0% {
+    transform: translateX(200px);
+    opacity: 0; }
+  60% {
+    transform: translateX(200px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes myTitle_fly_out {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg); }
+  100% {
+    transform: translateX(300%) translateY(500px) rotate(-90deg); } }
+@keyframes CL_title_dd {
+  0% {
+    transform: translateY(-300px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes CL_title_liftoff {
+  0% {
+    transform: translateY(0) rotate(0deg); }
+  30% {
+    transform: translateY(0) rotate(-90deg); }
+  100% {
+    transform: translateY(-800px) rotate(-90deg); } }
+@keyframes letter_body_enter {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes letter_body_exit {
+  0% {
+    transform: translateX(0px);
+    opacity: 1; }
+  100% {
+    transform: translateX(-500px);
+    opacity: 0; } }
+@keyframes title_card_slide_in {
+  0% {
+    transform: translateY(-500px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes cards_slide_in {
+  0% {
+    transform: translateX(700px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes edu_exp_fly_out {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(-1000px); } }
+@keyframes my_website_fly_in {
+  0% {
+    transform: translateX(-400px) translateY(-400px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1; } }
+@keyframes nicumoms_fly_in {
+  0% {
+    transform: translateX(400px) translateY(-400px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1; } }
+@keyframes tr_fly_in {
+  0% {
+    transform: translateX(0px) translateY(400px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1; } }
+@keyframes projects_spin {
+  0% {
+    transform: rotate(100deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes projects_leave {
+  0% {
+    transform: translateX(0px); }
+  60% {
+    opacity: 1; }
+  100% {
+    transform: translateX(700%);
+    opacity: 0; } }
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  40% {
+    transform: translateY(-4px); }
+  60% {
+    transform: translateY(3px); }
+  80% {
+    transform: translateY(-2px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes project_overlay_enter {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(100%); } }
+@keyframes project_overlay_exit {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
+
+/*# sourceMappingURL=animations.css.map */

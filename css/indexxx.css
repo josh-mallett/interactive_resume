@@ -1,0 +1,980 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Lato|Open+Sans|Roboto|Montserrat");
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; }
+
+.content::-webkit-scrollbar {
+  display: none; }
+
+.navBar {
+  z-index: 99999;
+  width: 100%;
+  height: 80px;
+  background: #3d78fa;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 2px 4px #464646; }
+  .navBar .myLogo {
+    position: absolute;
+    left: 5%;
+    top: 10px; }
+    .navBar .myLogo .myName {
+      color: white;
+      position: absolute;
+      font-family: "Ubuntu";
+      left: 110%;
+      font-size: 23px; }
+    .navBar .myLogo img {
+      width: 110px; }
+  .navBar .menu {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    font-size: 17px;
+    font-family: "Ubuntu"; }
+    .navBar .menu ul {
+      list-style: none;
+      display: inline-block;
+      padding: 0;
+      margin: 0; }
+
+.menu-btn {
+  width: 120px;
+  height: 40px;
+  line-height: 50px;
+  position: relative;
+  color: white;
+  float: left;
+  cursor: pointer; }
+  .menu-btn:hover {
+    background: #1450c8; }
+
+.menu-btn a {
+  color: white; }
+
+.dropMenu {
+  z-index: 99;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding: 0;
+  color: white;
+  width: 100%; }
+  .dropMenu li {
+    background: #464646;
+    display: none;
+    cursor: pointer; }
+    .dropMenu li:hover {
+      background: #646464; }
+    .dropMenu li a {
+      text-decoration: none; }
+
+.menu-btn:hover > .dropMenu li {
+  display: block; }
+
+.menu-btn:hover > a {
+  color: white; }
+
+.menu-btn:hover > .dropMenu.menu1 {
+  perspective: 1000px; }
+  .menu-btn:hover > .dropMenu.menu1 li {
+    transform-origin: top left; }
+    .menu-btn:hover > .dropMenu.menu1 li:nth-child(1) {
+      opacity: 0;
+      animation-name: menuAnimate0;
+      animation-duration: 210ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+@keyframes menuAnimate0 {
+  0% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px); } }
+    .menu-btn:hover > .dropMenu.menu1 li:nth-child(2) {
+      opacity: 0;
+      animation-name: menuAnimate0;
+      animation-duration: 420ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+@keyframes menuAnimate0 {
+  0% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px); } }
+    .menu-btn:hover > .dropMenu.menu1 li:nth-child(3) {
+      opacity: 0;
+      animation-name: menuAnimate0;
+      animation-duration: 630ms;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: forwards; }
+@keyframes menuAnimate0 {
+  0% {
+    opacity: 0;
+    transform: rotate(40deg) translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) translateX(0px); } }
+.menu-btn:hover > .dropMenu.menu2 {
+  perspective: 1000px; }
+  .menu-btn:hover > .dropMenu.menu2 li:nth-child(1) {
+    opacity: 0;
+    animation-name: menuAnimate1;
+    animation-duration: 230ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+@keyframes menuAnimate1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-120deg) translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }
+  .menu-btn:hover > .dropMenu.menu2 li:nth-child(2) {
+    opacity: 0;
+    animation-name: menuAnimate1;
+    animation-duration: 460ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+@keyframes menuAnimate1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-120deg) translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }
+  .menu-btn:hover > .dropMenu.menu2 li:nth-child(3) {
+    opacity: 0;
+    animation-name: menuAnimate1;
+    animation-duration: 690ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+@keyframes menuAnimate1 {
+  0% {
+    opacity: 0;
+    transform: rotateY(-120deg) translateY(20px); }
+  100% {
+    opacity: 1;
+    transform: rotateY(0deg) translateY(0px); } }
+.menu-btn:hover > .dropMenu.menu3 {
+  perspective: 1000px; }
+  .menu-btn:hover > .dropMenu.menu3 li:nth-child(1) {
+    opacity: 0;
+    animation-name: menuAnimate3;
+    animation-duration: 260ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+@keyframes menuAnimate3 {
+  0% {
+    opacity: 0;
+    transform: translateX(10px) rotateY(-120deg); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotateY(0deg); } }
+  .menu-btn:hover > .dropMenu.menu3 li:nth-child(2) {
+    opacity: 0;
+    animation-name: menuAnimate3;
+    animation-duration: 520ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+@keyframes menuAnimate3 {
+  0% {
+    opacity: 0;
+    transform: translateX(10px) rotateY(-120deg); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotateY(0deg); } }
+  .menu-btn:hover > .dropMenu.menu3 li:nth-child(3) {
+    opacity: 0;
+    animation-name: menuAnimate3;
+    animation-duration: 780ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; }
+@keyframes menuAnimate3 {
+  0% {
+    opacity: 0;
+    transform: translateX(10px) rotateY(-120deg); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotateY(0deg); } }
+.spinningBurger {
+  animation-name: spin;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg); }
+  80% {
+    transform: rotateZ(-100deg); }
+  100% {
+    transform: rotateZ(-90deg); } }
+.unspinnedBurger {
+  animation-name: unspin;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+@keyframes unspin {
+  0% {
+    transform: rotateZ(-90deg); }
+  80% {
+    transform: rotateZ(10deg); }
+  100% {
+    transform: rotateZ(0deg); } }
+.outOfView {
+  margin-left: -210px; }
+
+.inView {
+  margin-left: 0px; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 100%;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  height: 300%;
+  transition: all 0.4s ease-in-out; }
+
+a {
+  text-decoration: none; }
+  a .linkbox {
+    color: white; }
+
+.head {
+  background: url("../images/header1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  position: fixed; }
+  .head .textCover {
+    font-family: "Lato";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15); }
+    .head .textCover h1 {
+      position: absolute;
+      color: white;
+      font-size: 80px;
+      bottom: 20px;
+      left: 50px;
+      z-index: 99; }
+    .head .textCover p {
+      position: absolute;
+      color: white;
+      font-size: 30px;
+      bottom: 15px;
+      left: 65px;
+      margin-bottom: 0px; }
+
+.boxes {
+  width: 100%;
+  background: white;
+  z-index: 99;
+  position: absolute;
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  text-align: center;
+  transition: transform 0.4s linear;
+  display: none; }
+  .boxes .box-c {
+    padding-top: 50px;
+    display: inline-block;
+    margin: 0 auto; }
+    .boxes .box-c a {
+      float: left;
+      text-decoration: none;
+      color: #646464; }
+      .boxes .box-c a:hover {
+        color: #4682d2; }
+      .boxes .box-c a h3 {
+        font-family: "Roboto"; }
+      .boxes .box-c a .box {
+        display: block;
+        width: 350px;
+        height: 300px;
+        margin: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center; }
+        .boxes .box-c a .box:hover {
+          animation-name: bounce;
+          animation-timing-function: linear;
+          animation-duration: 0.37s; }
+
+.boxIn {
+  transform: translateX(0); }
+
+.boxOut {
+  transform: translateX(-140%); }
+
+.x {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer; }
+  .x img {
+    width: 25px;
+    height: 26px; }
+
+.box1 {
+  background-image: url("../images/nicu.png"); }
+
+.box2 {
+  background-image: url("../images/tr.png");
+  background-position: center; }
+
+.slide-out {
+  z-index: 999;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 120px;
+  background: white;
+  font-family: "Ubuntu";
+  transition: all 0.3s ease-in-out; }
+  .slide-out .SO-menu {
+    margin-top: 120px;
+    text-align: right;
+    position: absolute;
+    margin-left: -7px; }
+    .slide-out .SO-menu .menu-btn {
+      list-style: none;
+      font-size: 12px;
+      padding-right: 15px;
+      width: 72px;
+      height: 30px;
+      line-height: 32px;
+      color: #969696; }
+      .slide-out .SO-menu .menu-btn a {
+        color: #969696; }
+      .slide-out .SO-menu .menu-btn:hover > a {
+        color: #3d78fa; }
+      .slide-out .SO-menu .menu-btn:hover {
+        color: #3d78fa; }
+    .slide-out .SO-menu .dropMenu {
+      top: 0%;
+      left: 100%;
+      text-align: center; }
+
+.exit {
+  position: absolute;
+  width: 29px;
+  height: 26px;
+  top: 28px;
+  left: 25px; }
+
+.rotateMenu {
+  width: 32px;
+  height: 20px;
+  cursor: pointer; }
+
+.mobile:hover {
+  background: white; }
+
+.overlay .projectLinks {
+  border: solid red 2px;
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  margin: 0 auto; }
+
+.about {
+  margin-top: 70px;
+  padding-top: 10px;
+  width: 100%;
+  padding-bottom: 30px;
+  position: absolute;
+  background: white;
+  color: #646464;
+  transition: transform 0.4s linear;
+  display: none; }
+  .about .aboutContent {
+    margin: 0 auto;
+    background: white;
+    font-family: "Ubuntu"; }
+    .about .aboutContent .skillBar {
+      display: inline-block;
+      background: white;
+      border-right: solid #646464 2px;
+      float: left; }
+      .about .aboutContent .skillBar .skills {
+        list-style: none; }
+        .about .aboutContent .skillBar .skills li {
+          position: relative;
+          margin-top: 5px;
+          cursor: pointer;
+          text-align: center;
+          background: white;
+          border: solid #c8c8c8 1px;
+          border-bottom: solid #bf78c8 2px;
+          box-shadow: -2px 2px 5px #646464; }
+          .about .aboutContent .skillBar .skills li:hover {
+            animation-name: bounce;
+            animation-timing-function: linear;
+            animation-duration: 0.37s; }
+        .about .aboutContent .skillBar .skills .htmlBtn {
+          background: #a8e0ff; }
+    .about .aboutContent .Langs {
+      position: relative;
+      margin-left: 100px;
+      margin-top: 50px;
+      width: 600px;
+      float: left;
+      background: #a8e0ff;
+      box-shadow: -10px 5px 20px #646464;
+      padding: 10px 0px 10px 17px; }
+      .about .aboutContent .Langs h1 {
+        font-size: 40px; }
+      .about .aboutContent .Langs p {
+        max-width: 500px; }
+      .about .aboutContent .Langs h3 {
+        color: black;
+        font-size: 12px;
+        max-width: 400px; }
+
+.aboutIn {
+  transform: translateY(0); }
+
+.aboutOut {
+  transform: translateY(-100%); }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  40% {
+    transform: translateY(-4px); }
+  60% {
+    transform: translateY(3px); }
+  80% {
+    transform: translateY(-2px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes flyout {
+  0% {
+    transform: translateX(0); }
+  15% {
+    transform: translateX(-65px); }
+  50% {
+    transform: translateX(2000px); }
+  70% {
+    transform: translateX(-15px); }
+  74% {
+    transform: rotateZ(-3deg); }
+  85% {
+    transform: translateX(9px) rotateZ(2deg); }
+  100% {
+    transform: translateX(0) rotateZ(0deg); } }
+.LHTML {
+  display: block; }
+
+.CSS_Sass {
+  display: none; }
+
+.JS {
+  display: none; }
+
+.Java {
+  display: none; }
+
+.Android {
+  display: none; }
+
+.changeInfo {
+  animation-name: flyout;
+  animation-timing-function: linear;
+  animation-duration: 1000ms; }
+
+.Me {
+  position: absolute;
+  bottom: 10px;
+  left: 250px; }
+  .Me img {
+    width: 110px;
+    height: 250px; }
+
+.Me2 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-bottom: -5px;
+  margin-left: -120px;
+  width: 1000px;
+  display: block;
+  font-family: "Lato"; }
+
+.contact {
+  position: absolute;
+  left: 50%;
+  margin-left: -180px;
+  top: 100px;
+  display: none;
+  height: 200%; }
+  .contact .send {
+    text-align: right; }
+  .contact li {
+    list-style: none;
+    text-align: center; }
+    .contact li input {
+      height: 27px;
+      font-family: "Open Sans";
+      font-size: 19px;
+      width: 350px;
+      text-align: center;
+      background: rgba(25, 25, 25, 0.4);
+      color: white;
+      margin: 7px 0px 7px 0px;
+      border: solid #505050 2px; }
+      .contact li input::-webkit-input-placeholder {
+        color: white; }
+      .contact li input::-moz-placeholder {
+        color: white; }
+      .contact li input:-moz-placeholder {
+        color: white; }
+      .contact li input:-ms-input-placeholder {
+        color: white; }
+    .contact li textarea {
+      font-family: "Open Sans";
+      font-size: 20px;
+      width: 346px;
+      margin: 7px 0px 10px 0px;
+      background: rgba(25, 25, 25, 0.4);
+      color: white;
+      border: solid #505050 2px; }
+      .contact li textarea::-webkit-input-placeholder {
+        color: white; }
+      .contact li textarea::-moz-placeholder {
+        color: white; }
+      .contact li textarea:-moz-placeholder {
+        color: white; }
+      .contact li textarea:-ms-input-placeholder {
+        color: white; }
+    .contact li .sendbtn {
+      border: solid #505050 2px;
+      font-family: "Montserrat";
+      font-size: 26px;
+      width: 90px;
+      color: white;
+      height: 55px;
+      margin-top: 10px;
+      background: rgba(25, 25, 25, 0.4);
+      -webkit-transition: all 0.25s ease;
+      -moz-transition: all 0.25s ease;
+      transition: all 0.25s ease;
+      cursor: pointer; }
+      .contact li .sendbtn:hover {
+        color: black;
+        background: white;
+        border-color: #38ecf9;
+        cursor: pointer; }
+
+@keyframes rotateIn {
+  0% {
+    transform: rotateZ(230deg); }
+  75% {
+    transform: rotateZ(-4deg); }
+  88% {
+    transform: rotateZ(2deg); }
+  100% {
+    transform: rotateZ(0deg); } }
+@keyframes ci {
+  0% {
+    transform: translateX(60px) rotateZ(-120deg); }
+  100% {
+    transform: translateX(0px) rotateZ(0deg); } }
+@keyframes co {
+  0% {
+    transform: translateX(0px) rotateZ(0deg); }
+  100% {
+    transform: translateX(60px) rotateZ(-120deg); } }
+.contactIn {
+  animation-name: rotateIn;
+  animation-duration: 0.7s;
+  animation-animation-fill-mode: forwards; }
+
+.contactOut {
+  transform: translateX(2300px);
+  transition: all 0.4s linear; }
+
+.Cexit {
+  position: absolute;
+  z-index: 99;
+  cursor: pointer;
+  top: 100px;
+  right: 20px; }
+  .Cexit img {
+    width: 28px;
+    height: 30px; }
+
+.cIn {
+  animation-name: ci;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s; }
+
+.cOut {
+  animation-name: co;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s; }
+
+.cNeu {
+  transform: translateX(100px); }
+
+@media screen and (max-width: 439.9px) {
+  .navBar .myLogo {
+    top: 22px;
+    left: 69%; }
+    .navBar .myLogo img {
+      max-width: 80px; }
+    .navBar .myLogo .myName {
+      font-size: 14px;
+      left: -34%;
+      text-align: right; }
+  .navBar .menu {
+    right: 15px;
+    font-size: 12px;
+    display: none; }
+
+  .menu-btn {
+    max-width: 80px;
+    line-height: 43px; }
+
+  .rotateMenu {
+    display: block; }
+
+  .head .textCover h1 {
+    bottom: 32px;
+    left: 10px;
+    font-size: 27px; }
+  .head .textCover p {
+    font-size: 11px;
+    bottom: 22px;
+    left: 15px; }
+
+  .boxes {
+    margin-bottom: -860px; }
+    .boxes .box-c a {
+      float: none; }
+      .boxes .box-c a .box {
+        width: 250px;
+        height: 215px; }
+
+  .about .aboutContent {
+    width: 100%; }
+    .about .aboutContent .skillBar {
+      padding-right: 0px;
+      border-right: none;
+      border-bottom: solid #646464 2px;
+      width: 95%; }
+    .about .aboutContent .skills {
+      padding-top: 30px;
+      margin-left: -30px; }
+      .about .aboutContent .skills li {
+        display: inline-block;
+        padding: 13px 7px 13px 7px;
+        font-size: 12px;
+        line-height: 0px;
+        text-align: left;
+        margin-top: 0px; }
+    .about .aboutContent .Langs {
+      max-width: 275px;
+      padding-left: 0px;
+      padding-right: 16px;
+      margin-left: 10px;
+      margin-top: 15px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        margin-left: -20px;
+        max-width: 350px; }
+      .about .aboutContent .Langs h1 {
+        margin-left: -20px; }
+      .about .aboutContent .Langs h3 {
+        margin-left: -20px; }
+
+  .contact {
+    margin-left: -140px;
+    top: 140px; }
+    .contact li input {
+      width: 265px;
+      font-size: 16px; }
+    .contact li textarea {
+      width: 265px;
+      height: 100px;
+      font-size: 16px; }
+    .contact li .sendbtn {
+      height: 30px;
+      width: 60px;
+      font-size: 15px;
+      margin-top: 5px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media screen and (min-width: 440px) and (max-width: 549.9px) {
+  .navBar .myLogo {
+    top: 22px;
+    left: 77%; }
+    .navBar .myLogo img {
+      max-width: 80px; }
+    .navBar .myLogo .myName {
+      font-size: 14px;
+      left: -34%;
+      text-align: right; }
+  .navBar .menu {
+    right: 15px;
+    font-size: 12px;
+    display: none; }
+
+  .menu-btn {
+    max-width: 80px;
+    line-height: 43px; }
+
+  .rotateMenu {
+    display: block; }
+
+  .head .textCover h1 {
+    bottom: 32px;
+    left: 30px;
+    font-size: 30px; }
+  .head .textCover p {
+    font-size: 14px;
+    bottom: 22px;
+    left: 35px; }
+
+  .boxes .box-c a {
+    float: none; }
+    .boxes .box-c a .box {
+      width: 330px;
+      height: 225px; }
+
+  .about .aboutContent {
+    width: 100%; }
+    .about .aboutContent .skillBar {
+      padding-right: 0px;
+      border-right: none;
+      border-bottom: solid #646464 2px;
+      width: 100%; }
+    .about .aboutContent .skills li {
+      display: inline-block;
+      padding: 5px 8px 5px 8px;
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 0px; }
+    .about .aboutContent .Langs {
+      max-width: 370px;
+      padding-left: 0px;
+      padding-right: 6px;
+      margin-left: 40px;
+      margin-top: 65px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        max-width: 350px; }
+
+  .contact li input {
+    width: 300px; }
+  .contact li textarea {
+    width: 300px;
+    height: 100px; }
+  .contact li .sendbtn {
+    height: 30px;
+    width: 60px;
+    font-size: 15px;
+    margin-top: 5px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media screen and (min-width: 550px) and (max-width: 740.9px) {
+  .navBar .myLogo {
+    top: 22px; }
+    .navBar .myLogo img {
+      max-width: 80px; }
+    .navBar .myLogo .myName {
+      font-size: 17px; }
+  .navBar .menu {
+    right: 20px;
+    font-size: 14px; }
+
+  .menu-btn {
+    max-width: 100px;
+    line-height: 43px; }
+
+  .rotateMenu {
+    display: none; }
+
+  .head .textCover h1 {
+    bottom: 10px;
+    left: 28px;
+    font-size: 60px; }
+  .head .textCover p {
+    font-size: 20px;
+    left: 40px; }
+
+  .boxes {
+    margin-bottom: -100vh; }
+    .boxes .box-c a {
+      float: none; }
+      .boxes .box-c a .box {
+        width: 430px;
+        height: 235px; }
+
+  .about .aboutContent {
+    width: 100%; }
+    .about .aboutContent .skillBar {
+      padding-right: 25px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; }
+    .about .aboutContent .Langs {
+      max-width: 320px;
+      padding-left: 0px;
+      padding-right: 6px;
+      margin-left: 37px;
+      margin-top: 65px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        max-width: 270px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media all and (min-width: 741px) and (max-width: 1000.9px) {
+  .rotateMenu {
+    display: none; }
+
+  .head .textCover h1 {
+    bottom: 20px;
+    left: 50px; }
+
+  .boxes {
+    margin-bottom: -910px; }
+    .boxes .box-c a {
+      float: none; }
+      .boxes .box-c a .box {
+        width: 500px;
+        height: 285px; }
+
+  .about .aboutContent {
+    width: 90%; }
+    .about .aboutContent .skillBar {
+      padding-right: 65px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; }
+    .about .aboutContent .Langs {
+      max-width: 375px;
+      padding-left: 0px;
+      padding-right: 14px;
+      margin-left: 60px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        max-width: 350px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media all and (min-width: 1001px) and (max-width: 1368.9px) {
+  .rotateMenu {
+    display: none; }
+
+  .boxes {
+    max-height: 325px; }
+    .boxes .box-c .box {
+      max-width: 300px;
+      max-height: 245px; }
+
+  .about .aboutContent {
+    width: 90%; }
+    .about .aboutContent .Langs {
+      max-width: 550px; }
+    .about .aboutContent .skillBar {
+      padding-right: 65px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; } }
+@media all and (min-width: 1369px) {
+  .rotateMenu {
+    display: none; }
+
+  .boxes {
+    padding-bottom: 40px;
+    padding-top: 0px; }
+
+  .about .aboutContent {
+    width: 90%; }
+    .about .aboutContent .skillBar {
+      padding-right: 65px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; }
+
+  .Me2 img {
+    width: 310px;
+    height: 312px; } }
+
+/*# sourceMappingURL=indexxx.css.map */

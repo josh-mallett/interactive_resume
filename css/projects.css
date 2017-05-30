@@ -1,0 +1,42 @@
+.projects {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -230px;
+  background: red;
+  width: 400px; }
+  .projects .project_bubble {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer; }
+  .projects .my_website {
+    left: 40px;
+    background: url("../images/mywebsiteBubble.jpg");
+    background-size: cover; }
+  .projects .nicumoms {
+    left: 270px;
+    background: url("../images/nicu.png");
+    background-size: cover; }
+  .projects .twilight_ride {
+    left: 150px;
+    top: 190px;
+    background: url("../images/tr.png");
+    background-size: cover; }
+  .projects .github, .projects .linkedin {
+    width: 100px;
+    height: 100px;
+    background: black; }
+  .projects .github {
+    left: -60px;
+    top: 230px;
+    background: url("../images/GitHub-Mark.png");
+    background-size: cover; }
+  .projects .linkedin {
+    left: 400px;
+    top: 230px;
+    background: url("../images/linkedin-logo-3.png");
+    background-size: cover; }
+
+/*# sourceMappingURL=projects.css.map */

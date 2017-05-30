@@ -1,0 +1,31 @@
+.main_title {
+  width: 80%;
+  position: absolute;
+  margin: 30px 0px 0px 9%;
+  text-align: center; }
+  .main_title .myFace {
+    width: 140px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -250px; }
+    .main_title .myFace img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%; }
+  .main_title .myName {
+    width: 500px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -165px;
+    font-family: "Open Sans"; }
+    .main_title .myName img {
+      width: 350px;
+      height: 60px; }
+    .main_title .myName .myTitle {
+      position: absolute;
+      right: 75px;
+      top: 50px; }
+
+/*# sourceMappingURL=main_title.css.map */

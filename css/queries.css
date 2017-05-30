@@ -1,0 +1,337 @@
+@media screen and (max-width: 439.9px) {
+  .navBar .myLogo {
+    top: 22px;
+    left: 69%; }
+    .navBar .myLogo img {
+      max-width: 80px; }
+    .navBar .myLogo .myName {
+      font-size: 14px;
+      left: -34%;
+      text-align: right; }
+  .navBar .menu {
+    right: 15px;
+    font-size: 12px;
+    display: none; }
+
+  .menu-btn {
+    max-width: 80px;
+    line-height: 43px; }
+
+  .rotateMenu {
+    display: block; }
+
+  .head .textCover h1 {
+    bottom: 32px;
+    left: 10px;
+    font-size: 27px; }
+  .head .textCover p {
+    font-size: 11px;
+    bottom: 22px;
+    left: 15px; }
+
+  .boxes {
+    margin-bottom: -860px; }
+    .boxes .box-c a {
+      float: none; }
+      .boxes .box-c a .box {
+        width: 250px;
+        height: 215px; }
+
+  .about .aboutContent {
+    width: 100%; }
+    .about .aboutContent .skillBar {
+      padding-right: 0px;
+      border-right: none;
+      border-bottom: solid #646464 2px;
+      width: 95%; }
+    .about .aboutContent .skills {
+      padding-top: 30px;
+      margin-left: -30px; }
+      .about .aboutContent .skills li {
+        display: inline-block;
+        padding: 13px 7px 13px 7px;
+        font-size: 12px;
+        line-height: 0px;
+        text-align: left;
+        margin-top: 0px; }
+    .about .aboutContent .Langs {
+      max-width: 275px;
+      padding-left: 0px;
+      padding-right: 16px;
+      margin-left: 10px;
+      margin-top: 15px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        margin-left: -20px;
+        max-width: 350px; }
+      .about .aboutContent .Langs h1 {
+        margin-left: -20px; }
+      .about .aboutContent .Langs h3 {
+        margin-left: -20px; }
+
+  .contact {
+    margin-left: -140px;
+    top: 140px; }
+    .contact li input {
+      width: 265px;
+      font-size: 16px; }
+    .contact li textarea {
+      width: 265px;
+      height: 100px;
+      font-size: 16px; }
+    .contact li .sendbtn {
+      height: 30px;
+      width: 60px;
+      font-size: 15px;
+      margin-top: 5px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media screen and (min-width: 440px) and (max-width: 549.9px) {
+  .navBar .myLogo {
+    top: 22px;
+    left: 77%; }
+    .navBar .myLogo img {
+      max-width: 80px; }
+    .navBar .myLogo .myName {
+      font-size: 14px;
+      left: -34%;
+      text-align: right; }
+  .navBar .menu {
+    right: 15px;
+    font-size: 12px;
+    display: none; }
+
+  .menu-btn {
+    max-width: 80px;
+    line-height: 43px; }
+
+  .rotateMenu {
+    display: block; }
+
+  .head .textCover h1 {
+    bottom: 32px;
+    left: 30px;
+    font-size: 30px; }
+  .head .textCover p {
+    font-size: 14px;
+    bottom: 22px;
+    left: 35px; }
+
+  .boxes .box-c a {
+    float: none; }
+    .boxes .box-c a .box {
+      width: 330px;
+      height: 225px; }
+
+  .about .aboutContent {
+    width: 100%; }
+    .about .aboutContent .skillBar {
+      padding-right: 0px;
+      border-right: none;
+      border-bottom: solid #646464 2px;
+      width: 100%; }
+    .about .aboutContent .skills li {
+      display: inline-block;
+      padding: 5px 8px 5px 8px;
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 0px; }
+    .about .aboutContent .Langs {
+      max-width: 370px;
+      padding-left: 0px;
+      padding-right: 6px;
+      margin-left: 40px;
+      margin-top: 65px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        max-width: 350px; }
+
+  .contact li input {
+    width: 300px; }
+  .contact li textarea {
+    width: 300px;
+    height: 100px; }
+  .contact li .sendbtn {
+    height: 30px;
+    width: 60px;
+    font-size: 15px;
+    margin-top: 5px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media screen and (min-width: 550px) and (max-width: 740.9px) {
+  .navBar .myLogo {
+    top: 22px; }
+    .navBar .myLogo img {
+      max-width: 80px; }
+    .navBar .myLogo .myName {
+      font-size: 17px; }
+  .navBar .menu {
+    right: 20px;
+    font-size: 14px; }
+
+  .menu-btn {
+    max-width: 100px;
+    line-height: 43px; }
+
+  .rotateMenu {
+    display: none; }
+
+  .head .textCover h1 {
+    bottom: 10px;
+    left: 28px;
+    font-size: 60px; }
+  .head .textCover p {
+    font-size: 20px;
+    left: 40px; }
+
+  .boxes {
+    margin-bottom: -100vh; }
+    .boxes .box-c a {
+      float: none; }
+      .boxes .box-c a .box {
+        width: 430px;
+        height: 235px; }
+
+  .about .aboutContent {
+    width: 100%; }
+    .about .aboutContent .skillBar {
+      padding-right: 25px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; }
+    .about .aboutContent .Langs {
+      max-width: 320px;
+      padding-left: 0px;
+      padding-right: 6px;
+      margin-left: 37px;
+      margin-top: 65px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        max-width: 270px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media all and (min-width: 741px) and (max-width: 1000.9px) {
+  .rotateMenu {
+    display: none; }
+
+  .head .textCover h1 {
+    bottom: 20px;
+    left: 50px; }
+
+  .boxes {
+    margin-bottom: -910px; }
+    .boxes .box-c a {
+      float: none; }
+      .boxes .box-c a .box {
+        width: 500px;
+        height: 285px; }
+
+  .about .aboutContent {
+    width: 90%; }
+    .about .aboutContent .skillBar {
+      padding-right: 65px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; }
+    .about .aboutContent .Langs {
+      max-width: 375px;
+      padding-left: 0px;
+      padding-right: 14px;
+      margin-left: 60px; }
+      .about .aboutContent .Langs p {
+        font-size: 12px;
+        max-width: 350px; }
+
+  @keyframes flyout {
+    0% {
+      transform: translateX(0); }
+    15% {
+      transform: translateX(-30px); }
+    50% {
+      transform: translateX(2000px); }
+    70% {
+      transform: translateX(-15px); }
+    74% {
+      transform: rotateZ(-3deg); }
+    85% {
+      transform: translateX(9px) rotateZ(2deg); }
+    100% {
+      transform: translateX(0) rotateZ(0deg); } } }
+@media all and (min-width: 1001px) and (max-width: 1368.9px) {
+  .rotateMenu {
+    display: none; }
+
+  .boxes {
+    max-height: 325px; }
+    .boxes .box-c .box {
+      max-width: 300px;
+      max-height: 245px; }
+
+  .about .aboutContent {
+    width: 90%; }
+    .about .aboutContent .Langs {
+      max-width: 550px; }
+    .about .aboutContent .skillBar {
+      padding-right: 65px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; } }
+@media all and (min-width: 1369px) {
+  .rotateMenu {
+    display: none; }
+
+  .boxes {
+    padding-bottom: 40px;
+    padding-top: 0px; }
+
+  .about .aboutContent {
+    width: 90%; }
+    .about .aboutContent .skillBar {
+      padding-right: 65px; }
+      .about .aboutContent .skillBar .skills li {
+        padding: 10px 12px 10px 12px; }
+
+  .Me2 img {
+    width: 310px;
+    height: 312px; } }
+
+/*# sourceMappingURL=queries.css.map */

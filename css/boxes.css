@@ -1,0 +1,59 @@
+.boxes {
+  width: 100%;
+  background: white;
+  z-index: 99;
+  position: absolute;
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  text-align: center;
+  transition: transform 0.4s linear;
+  display: none; }
+  .boxes .box-c {
+    padding-top: 50px;
+    display: inline-block;
+    margin: 0 auto; }
+    .boxes .box-c a {
+      float: left;
+      text-decoration: none;
+      color: #646464; }
+      .boxes .box-c a:hover {
+        color: #4682d2; }
+      .boxes .box-c a h3 {
+        font-family: "Roboto"; }
+      .boxes .box-c a .box {
+        display: block;
+        width: 350px;
+        height: 300px;
+        margin: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center; }
+        .boxes .box-c a .box:hover {
+          animation-name: bounce;
+          animation-timing-function: linear;
+          animation-duration: 0.37s; }
+
+.boxIn {
+  transform: translateX(0); }
+
+.boxOut {
+  transform: translateX(-140%); }
+
+.x {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  cursor: pointer; }
+  .x img {
+    width: 25px;
+    height: 26px; }
+
+.box1 {
+  background-image: url("../images/nicu.png"); }
+
+.box2 {
+  background-image: url("../images/tr.png");
+  background-position: center; }
+
+/*# sourceMappingURL=boxes.css.map */

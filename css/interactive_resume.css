@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Open+Sans|Roboto");
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.main_title {
+  width: 80%;
+  position: absolute;
+  margin: 30px 0px 0px 9%;
+  text-align: center; }
+  .main_title .myFace {
+    width: 140px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -250px; }
+    .main_title .myFace img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%; }
+  .main_title .myName {
+    width: 500px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -165px;
+    font-family: "Open Sans"; }
+    .main_title .myName img {
+      width: 350px;
+      height: 60px; }
+    .main_title .myName .myTitle {
+      position: absolute;
+      right: 75px;
+      top: 50px; }
+
+.arrow_button {
+  position: fixed;
+  right: 15%;
+  bottom: 25px;
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  border: solid black 2px;
+  background: white;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
+  .arrow_button img {
+    margin: 0 auto;
+    width: 14px;
+    height: 14px; }
+
+.coverLetter {
+  width: 80%;
+  position: absolute;
+  margin: 30px 0px 0px 9%;
+  text-align: center; }
+  .coverLetter .CL_title {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    margin-left: -90px;
+    font-family: "Roboto";
+    font-size: 25px; }
+  .coverLetter .letterBody {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -190px;
+    transform-origin: center;
+    display: block; }
+    .coverLetter .letterBody p {
+      width: 450px;
+      font-family: "Lato";
+      text-align: left; }
+
+.edu_exp {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -310px; }
+  .edu_exp .title_card {
+    margin: 0px 0px 0px 41px; }
+    .edu_exp .title_card h1 {
+      margin: 0px 0px 0px 10px;
+      font-family: "Roboto";
+      font-size: 40px; }
+  .edu_exp ul {
+    list-style: none; }
+    .edu_exp ul li {
+      margin-top: 30px; }
+      .edu_exp ul li .card {
+        width: 500px;
+        height: 250px;
+        background: white;
+        box-shadow: -4px 4px 8px #3c3c3c; }
+        .edu_exp ul li .card .card_title {
+          font-family: "Lato";
+          position: absolute;
+          font-size: 13px;
+          top: 0px;
+          left: 15px; }
+          .edu_exp ul li .card .card_title h3 {
+            margin: -16px 0 0 20px; }
+        .edu_exp ul li .card .card_content {
+          font-family: "Lato";
+          position: absolute;
+          top: 80px;
+          left: 35px; }
+          .edu_exp ul li .card .card_content p {
+            max-width: 350px; }
+        .edu_exp ul li .card .card_logo {
+          position: absolute;
+          bottom: 10px;
+          right: 25px; }
+          .edu_exp ul li .card .card_logo img {
+            width: 100px;
+            height: 100px; }
+          .edu_exp ul li .card .card_logo .jmLogo {
+            width: 100px;
+            height: 60px; }
+
+.projects {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-left: -230px;
+  background: red;
+  width: 400px; }
+  .projects .project_bubble {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer; }
+  .projects .my_website {
+    left: 40px;
+    background: url("../images/mywebsiteBubble.jpg");
+    background-size: cover; }
+  .projects .nicumoms {
+    left: 270px;
+    background: url("../images/nicu.png");
+    background-size: cover; }
+  .projects .twilight_ride {
+    left: 150px;
+    top: 190px;
+    background: url("../images/tr.png");
+    background-size: cover; }
+  .projects .github, .projects .linkedin {
+    width: 100px;
+    height: 100px;
+    background: black; }
+  .projects .github {
+    left: -60px;
+    top: 230px;
+    background: url("../images/GitHub-Mark.png");
+    background-size: cover; }
+  .projects .linkedin {
+    left: 400px;
+    top: 230px;
+    background: url("../images/linkedin-logo-3.png");
+    background-size: cover; }
+
+.project_overlay {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  overflow-y: scroll;
+  z-index: 9999;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  left: -100%; }
+
+.my_website_info, .nicumoms_info, .twilight_ride_info {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  overflow-y: scroll;
+  color: white;
+  font-family: "Roboto"; }
+  .my_website_info h1, .nicumoms_info h1, .twilight_ride_info h1 {
+    font-size: 50px; }
+  .my_website_info a, .nicumoms_info a, .twilight_ride_info a {
+    color: white;
+    text-decoration: underline;
+    text-align: left; }
+  .my_website_info img, .nicumoms_info img, .twilight_ride_info img {
+    margin: 0;
+    padding: 0; }
+  .my_website_info p, .nicumoms_info p, .twilight_ride_info p {
+    max-width: 60%;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: "Lato";
+    font-size: 13px; }
+
+#main_pic {
+  width: 65%; }
+
+.x {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer; }
+  .x img {
+    width: 35px;
+    height: 35px; }
+
+@keyframes roll_in {
+  0% {
+    transform: translateX(-300px) rotate(-300deg);
+    opacity: 0; }
+  70% {
+    transform: translateX(15px) rotate(17deg);
+    opacity: 1; }
+  85% {
+    transform: translateX(-10px) rotate(-10deg); }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1; } }
+@keyframes roll_out {
+  0% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1; }
+  100% {
+    transform: translateX(-300px) rotate(-300deg);
+    opacity: 0; } }
+@keyframes name_roll {
+  0% {
+    transform: rotate(-80deg) translateY(-70px);
+    opacity: 0; }
+  50% {
+    transform: rotate(-80deg) translateY(-70px);
+    opacity: 0; }
+  80% {
+    transform: rotate(6deg) translateY(11px);
+    opacity: 0.7; }
+  90% {
+    transform: rotate(-7deg) translateY(5px); }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+    opacity: 1; } }
+@keyframes name_fly_out {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg); }
+  60% {
+    opacity: 1; }
+  100% {
+    transform: translateX(300%) translateY(-200px) rotate(-90deg);
+    opacity: 0; } }
+@keyframes myTitle_fly_in {
+  0% {
+    transform: translateX(200px);
+    opacity: 0; }
+  60% {
+    transform: translateX(200px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes myTitle_fly_out {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg); }
+  100% {
+    transform: translateX(300%) translateY(500px) rotate(-90deg); } }
+@keyframes CL_title_dd {
+  0% {
+    transform: translateY(-300px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes CL_title_liftoff {
+  0% {
+    transform: translateY(0) rotate(0deg); }
+  30% {
+    transform: translateY(0) rotate(-90deg); }
+  100% {
+    transform: translateY(-800px) rotate(-90deg); } }
+@keyframes letter_body_enter {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes letter_body_exit {
+  0% {
+    transform: translateX(0px);
+    opacity: 1; }
+  100% {
+    transform: translateX(-500px);
+    opacity: 0; } }
+@keyframes title_card_slide_in {
+  0% {
+    transform: translateY(-500px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes cards_slide_in {
+  0% {
+    transform: translateX(700px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px);
+    opacity: 1; } }
+@keyframes edu_exp_fly_out {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(-1000px); } }
+@keyframes my_website_fly_in {
+  0% {
+    transform: translateX(-400px) translateY(-400px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1; } }
+@keyframes nicumoms_fly_in {
+  0% {
+    transform: translateX(400px) translateY(-400px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1; } }
+@keyframes tr_fly_in {
+  0% {
+    transform: translateX(0px) translateY(400px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0px) translateY(0px);
+    opacity: 1; } }
+@keyframes projects_spin {
+  0% {
+    transform: rotate(100deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes projects_leave {
+  0% {
+    transform: translateX(0px); }
+  60% {
+    opacity: 1; }
+  100% {
+    transform: translateX(700%);
+    opacity: 0; } }
+@keyframes bounce {
+  0% {
+    transform: translateY(0px); }
+  40% {
+    transform: translateY(-4px); }
+  60% {
+    transform: translateY(3px); }
+  80% {
+    transform: translateY(-2px); }
+  100% {
+    transform: translateY(0px); } }
+@keyframes project_overlay_enter {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(100%); } }
+@keyframes project_overlay_exit {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
+.pic_enter {
+  animation-name: roll_in;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.pic_leave {
+  animation-name: roll_out;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.name_enter {
+  transform-origin: left;
+  animation-name: name_roll;
+  animation-duration: 0.82s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.name_leave {
+  animation-name: name_fly_out;
+  animation-duration: 0.82s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.MT_in {
+  animation-name: myTitle_fly_in;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.MT_out {
+  animation-name: myTitle_fly_out;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.CL_out {
+  display: none; }
+
+.CL_in {
+  display: block; }
+
+.CL_title_in {
+  animation-name: CL_title_dd;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.CL_title_out {
+  transform-origin: left;
+  animation-name: CL_title_liftoff;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.letterBody_in {
+  animation-name: letter_body_enter;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.letterBody_out {
+  animation-name: letter_body_exit;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.edu_exp_in {
+  display: block; }
+
+.edu_exp_out {
+  display: none; }
+
+.title_card_in {
+  animation-name: title_card_slide_in;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.cards_out {
+  animation-name: edu_exp_fly_out;
+  animation-duration: 0.4s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards; }
+
+.cards_in:nth-child(1) {
+  animation-name: cards_slide_in;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+.cards_in:nth-child(2) {
+  animation-name: cards_slide_in;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+.cards_in:nth-child(3) {
+  animation-name: cards_slide_in;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.projects_in {
+  display: block;
+  animation-name: projects_spin;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.projects_exit {
+  animation-name: projects_leave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.projects_out {
+  display: none; }
+
+.interactive_bubble:hover {
+  animation-name: bounce;
+  animation-duration: 0.37s;
+  animation-timing-function: linear; }
+
+.my_website_in {
+  animation-name: my_website_fly_in;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.nicumoms_in {
+  animation-name: nicumoms_fly_in;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.tr_in {
+  animation-name: tr_fly_in;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.project_overlay_in {
+  animation-name: project_overlay_enter;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+.project_overlay_out {
+  animation-name: project_overlay_exit;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards; }
+
+/*# sourceMappingURL=interactive_resume.css.map */

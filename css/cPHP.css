@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Lato");
+html, body {
+  margin: 30px;
+  padding: 0;
+  background: #d2d2d2;
+  width: 100%; }
+
+.successMsg {
+  width: 400px;
+  height: 250px;
+  background: white;
+  font-family: "Lato";
+  font-size: 15px;
+  margin: 0 auto;
+  position: relative;
+  color: #50c878;
+  text-align: center;
+  box-shadow: -3px 3px 6px #505050; }
+  .successMsg img {
+    max-width: 190px;
+    max-height: 190px;
+    margin: 0 auto; }
+
+.failureMsg {
+  width: 400px;
+  height: 250px;
+  font-family: "Lato";
+  font-size: 15px;
+  background: white;
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+  position: relative;
+  box-shadow: -3px 3px 6px #505050; }
+  .failureMsg img {
+    max-width: 190px;
+    max-height: 193px;
+    margin: 0 auto; }
+
+/*# sourceMappingURL=cPHP.css.map */
