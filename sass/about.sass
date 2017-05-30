@@ -1,0 +1,141 @@
+.about
+  margin-top: 70px
+  padding-top: 10px
+  width: 100%
+  //height: 95%
+  padding-bottom: 30px
+  position: absolute
+  background: white
+  color: rgb(100,100,100)
+  transition: transform .4s linear
+  display: none
+
+  .aboutContent
+    //border: solid black 1px
+    //width: 90%
+    margin: 0 auto
+    background: white
+    font-family: "Ubuntu"
+    .skillBar
+      display: inline-block
+
+      background: white
+      border-right: solid rgb(100,100,100) 2px
+      //padding-right: 65px
+      float: left
+      .skills
+        list-style: none
+        li
+          position: relative
+          //line-height: 40px
+          //width: 90px
+          //height: 40px
+          margin-top: 5px
+          cursor: pointer
+          text-align: center
+          background: white
+          border: solid rgb(200,200,200) 1px
+          border-bottom: solid rgb(191, 120, 200) 2px
+          box-shadow: -2px 2px 5px rgba(100, 100, 100, 1)
+          &:hover
+            animation:
+              name: bounce
+              timing-function: linear
+              duration: .37s
+        .htmlBtn
+          background: rgb(168, 224, 255)
+
+
+
+
+    .Langs
+      position: relative
+      margin-left: 100px
+      margin-top: 50px
+      width: 600px
+      float: left
+      background: rgb(168, 224, 255)
+      //border-bottom: solid rgb(100,100,100) 2px
+      box-shadow: -10px 5px 20px rgb(100,100,100)
+      padding: 10px 0px 10px 17px
+      h1
+        font-size: 40px
+      p
+        max-width: 500px
+      h3
+        color: black
+        font-size: 12px
+        max-width: 400px
+
+.aboutIn
+  transform: translateY(0)
+
+.aboutOut
+  transform: translateY(-100%)
+
+
+@keyframes bounce
+  0%
+    transform: translateY(0px)
+  40%
+    transform: translateY(-4px)
+  60%
+    transform: translateY(3px)
+  80%
+    transform: translateY(-2px)
+  100%
+    transform: translateY(0px)
+
+
+@keyframes flyout
+  0%
+    transform: translateX(0)
+  15%
+    transform: translateX(-65px)
+  50%
+    transform: translateX(2000px)
+  70%
+    transform: translateX(-15px)
+  74%
+    transform: rotateZ(-3deg)
+  85%
+    transform: translateX(9px) rotateZ(2deg)
+  100%
+    transform: translateX(0) rotateZ(0deg)
+
+.LHTML
+  display: block
+.CSS_Sass
+  display: none
+.JS
+  display: none
+.Java
+  display: none
+.Android
+  display: none
+
+.changeInfo
+  animation:
+    name: flyout
+    timing-function: linear
+    duration: 1000ms
+
+
+.Me
+  position: absolute
+  bottom: 10px
+  left: 250px
+  img
+    width: 110px
+    height: 250px
+
+
+.Me2
+  position: absolute
+  bottom: 0px
+  left: 50%
+  margin-bottom: -5px
+  margin-left: -120px
+  width: 1000px
+  display: block
+  font-family: "Lato"

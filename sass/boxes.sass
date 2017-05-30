@@ -1,0 +1,68 @@
+.boxes
+  width: 100%
+  background: white
+  z-index: 99
+  position: absolute
+  margin-top: 70px
+  padding-top: 10px
+  padding-bottom: 70px
+  text-align: center
+  transition: transform .4s linear
+  display: none
+  .box-c
+    padding-top: 50px
+    display: inline-block
+    margin: 0 auto
+    a
+      float: left
+      text-decoration: none
+      color: rgb(100,100,100)
+      &:hover
+        color: rgb(70,130,210)
+      h3
+        font-family: "Roboto"
+
+      .box
+        display: block
+        width: 350px
+        height: 300px
+        margin: 12px
+        background-size: cover
+        background-repeat: no-repeat
+        text-align: center
+        &:hover
+          animation:
+            name: bounce
+            timing-function: linear
+            duration: .37s
+
+
+
+.boxIn
+  transform: translateX(0)
+
+
+
+.boxOut
+  transform: translateX(-140%)
+
+
+
+.x
+  position: absolute
+  right: 20px
+  top: 25px
+  cursor: pointer
+  img
+    width: 25px
+    height: 26px
+
+
+.box1
+  //background: grey
+  background-image: url('../images/nicu.png')
+
+.box2
+  //background: grey
+  background-image: url('../images/tr.png')
+  background-position: center

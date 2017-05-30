@@ -1,0 +1,178 @@
+//main title and picture
+
+.pic_enter
+  animation:
+    name: roll_in
+    duration: .8s
+    timing-function: linear
+    fill-mode: forwards
+
+.pic_leave
+  animation:
+    name: roll_out
+    duration: .8s
+    timing-function: linear
+    fill-mode: forwards
+
+.name_enter
+  transform-origin: left
+  animation:
+    name: name_roll
+    duration: .82s
+    timing-function: ease
+    fill-mode: forwards
+
+.name_leave
+  animation:
+    name: name_fly_out
+    duration: .82s
+    timing-function: ease
+    fill-mode: forwards
+
+.MT_in
+  animation:
+    name: myTitle_fly_in
+    duration: 1.2s
+    timing-function: ease
+    fill-mode: forwards
+
+.MT_out
+  animation:
+    name: myTitle_fly_out
+    duration: 1.2s
+    timing-function: ease
+    fill-mode: forwards
+
+//cover letter
+.CL_out
+  display: none
+
+.CL_in
+  display: block
+
+.CL_title_in
+  animation:
+    name: CL_title_dd
+    duration: 1.2s
+    timing-function: ease
+    fill-mode: forwards
+
+.CL_title_out
+  transform-origin: left
+  animation:
+    name: CL_title_liftoff
+    duration: .8s
+    timing-function: ease
+    fill-mode: forwards
+
+.letterBody_in
+  animation:
+    name: letter_body_enter
+    duration: 1.2s
+    timing-function: ease
+    fill-mode: forwards
+
+.letterBody_out
+  animation:
+    name: letter_body_exit
+    duration: .5s
+    timing-function: ease
+    fill-mode: forwards
+
+
+// edu_exp
+.edu_exp_in
+  display: block
+
+.edu_exp_out
+  display: none
+
+.title_card_in
+  animation:
+    name: title_card_slide_in
+    duration: .8s
+    timing-function: ease
+    fill-mode: forwards
+
+.cards_out
+  animation:
+    name: edu_exp_fly_out
+    duration: .4s
+    timing-function: ease
+    fill-mode: forwards
+
+.cards_in
+  @for $i from 1 through 3
+    &:nth-child(#{$i})
+      animation:
+        name: cards_slide_in
+        duration: .4s * $i
+        timing-function: ease-in-out
+        fill-mode: forwards
+
+
+//projects
+
+.projects_in
+  display: block
+  animation:
+    name: projects_spin
+    duration: .5s
+    timing-function: linear
+    fill-mode: forwards
+
+.projects_exit
+  animation:
+    name: projects_leave
+    duration: 1s
+    timing-function: linear
+    fill-mode: forwards
+
+.projects_out
+  display: none
+
+.interactive_bubble
+  &:hover
+    animation:
+      name: bounce
+      duration: .37s
+      timing-function: linear
+
+
+.my_website_in
+  animation:
+    name: my_website_fly_in
+    duration: .5s
+    timing-function: linear
+    fill-mode: forwards
+
+
+.nicumoms_in
+  animation:
+    name: nicumoms_fly_in
+    duration: .5s
+    timing-function: linear
+    fill-mode: forwards
+
+.tr_in
+  animation:
+    name: tr_fly_in
+    duration: .5s
+    timing-function: linear
+    fill-mode: forwards
+
+//project overlay
+
+.project_overlay_in
+  animation:
+    name: project_overlay_enter
+    duration: .5s
+    timing-function: linear
+    fill-mode: forwards
+
+.project_overlay_out
+  animation:
+    name: project_overlay_exit
+    duration: .5s
+    timing-function: linear
+    fill-mode: forwards

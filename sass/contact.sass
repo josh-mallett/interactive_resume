@@ -1,0 +1,120 @@
+.contact
+  position: absolute
+  left: 50%
+  margin-left: -180px
+  top: 100px
+  display: none
+  height: 200%
+
+  .send
+    text-align: right
+  li
+    list-style: none
+    text-align: center
+    input
+      height: 27px
+      font-family: "Open Sans"
+      font-size: 19px
+      width: 350px
+      text-align: center
+      background: rgba(25,25,25,.4)
+      color: white
+      margin: 7px 0px 7px 0px
+      border: solid rgb(80,80,80) 2px
+      @include placeholder
+        color: white
+
+    textarea
+      font-family: "Open Sans"
+      font-size: 20px
+      width: 346px
+      margin: 7px 0px 10px 0px
+      background: rgba(25,25,25,.4)
+      color: white
+      border: solid rgb(80,80,80) 2px
+      @include placeholder
+        color: white
+    .sendbtn
+      border: solid rgb(80,80,80) 2px
+      font-family: "Montserrat"
+      font-size: 26px
+      width: 90px
+      color: white
+      height: 55px
+      margin-top: 10px
+      background: rgba(25,25,25,.4)
+      -webkit-transition: all 0.25s ease
+      -moz-transition: all 0.25s ease
+      transition: all 0.25s ease
+      cursor: pointer
+      &:hover
+        color: black
+        background: white
+        border-color: #38ecf9
+        cursor: pointer
+
+
+
+@keyframes rotateIn
+  0%
+    transform: rotateZ(230deg)
+  75%
+    transform: rotateZ(-4deg)
+  88%
+    transform: rotateZ(2deg)
+  100%
+    transform: rotateZ(0deg)
+
+
+@keyframes ci
+  0%
+    transform: translateX(60px) rotateZ(-120deg)
+  100%
+    transform: translateX(0px) rotateZ(0deg)
+
+
+@keyframes co
+  0%
+    transform: translateX(0px) rotateZ(0deg)
+  100%
+    transform: translateX(60px) rotateZ(-120deg)
+
+
+
+
+.contactIn
+  animation:
+    name: rotateIn
+    duration: .7s
+    animation-fill-mode: forwards
+
+.contactOut
+  transform: translateX(2300px)
+  transition: all .4s linear
+
+
+
+.Cexit
+  position: absolute
+  z-index: 99
+  cursor: pointer
+  top: 100px
+  right: 20px
+  img
+    width: 28px
+    height: 30px
+
+.cIn
+  animation:
+    name: ci
+    fill-mode: forwards
+    duration: .4s
+
+.cOut
+  animation:
+    name: co
+    fill-mode: forwards
+    duration: .4s
+
+.cNeu
+  transform: translateX(100px)
